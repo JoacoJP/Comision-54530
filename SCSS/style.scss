@@ -130,7 +130,7 @@ footer{
     text-align: center;
 
     img{
-        background-color: #07457E;
+        background-color: $color-primario;
     }
 
     p{
@@ -151,6 +151,9 @@ footer{
 @mixin text-align{
     text-align: center;
 }
+
+$color-primario: #07457E;
+
 /**siempre al final del codigo css y ordenado**/
 
 @media (max-width: 768px) {
@@ -179,83 +182,99 @@ footer{
 }
 
 @media (max-width: 320px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .container1{
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-}
-
-    .grid-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-    }
-
     header{
         width: 100%;
+        overflow-x: hidden;
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     body{
         width: 100%;
+
+        .container1{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+        }
+        
+        
+            .noticias{
+                width: 90px;
+                height: 45px;
+            }
+
+
+            .noticias{
+                width: 90px;
+                height: 45px;
+            }
+        
+            img{
+            width: 150px;
+            height: auto;
+        }
+        
+        .jugadores{
+            grid-template-columns: repeat(2, 1fr);
+            font-size: x-small;
+        }
+        
+        .entrenadores{
+            p{
+                font-size: xx-small;
+            }
+        }
+        
+        .individual{
+            font-size: xx-small;
+        }
+        
+        a{
+            font-size: smaller;
+        }
+        
+        h2{
+            font-size: small;
+        }
+        
+        h3{
+            font-size: xx-small;
+        }
+        
+        p{
+            font-size: xx-small;
+        }
+        
+        h4{
+            color: #07457E;
+        }
+            }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+
+        p{
+            font-size: x-small;
+        }
+
+        .oldschool{
+            width: 200px;
+            height: 100px;
+                }
+                
+        .worldrugby{
+            width: 200px;
+            height: 100px;
+                }
+                
+        .juegos-olimpicos{
+            width: 200px;
+            height: 100px;   
+                }
     }
-
-    .noticias{
-        width: 90px;
-        height: 45px;
-    }
-
-    img{
-    width: 150px;
-    height: auto;
-}
-
-.oldschool{
-    width: 200px;
-    height: 100px;
-}
-
-.worldrugby{
-    width: 200px;
-    height: 100px;
-}
-
-.juegos-olimpicos{
-    width: 200px;
-    height: 100px;   
-}
-
-.jugadores{
-    grid-template-columns: repeat(2, 1fr);
-    font-size: x-small;
-}
-
-.entrenadores{
-    p{
-        font-size: xx-small;
-    }
-}
-
-.individual{
-    font-size: xx-small;
-}
-
-a{
-    font-size: smaller;
-}
-
-h2{
-    font-size: small;
-}
-
-h3{
-    font-size: xx-small;
-}
-
-p{
-    font-size: xx-small;
-}
 }
 
 h4{

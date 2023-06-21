@@ -122,48 +122,56 @@ footer {
     height: auto; } }
 
 @media (max-width: 320px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr); }
-  .container1 {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px; }
+  header {
+    width: 100%;
+    overflow-x: hidden; }
+    header .container {
+      grid-template-columns: repeat(2, 1fr); }
+  body {
+    width: 100%; }
+    body .container1 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px; }
+    body .noticias {
+      width: 90px;
+      height: 45px; }
+    body .noticias {
+      width: 90px;
+      height: 45px; }
+    body img {
+      width: 150px;
+      height: auto; }
+    body .jugadores {
+      grid-template-columns: repeat(2, 1fr);
+      font-size: x-small; }
+    body .entrenadores p {
+      font-size: xx-small; }
+    body .individual {
+      font-size: xx-small; }
+    body a {
+      font-size: smaller; }
+    body h2 {
+      font-size: small; }
+    body h3 {
+      font-size: xx-small; }
+    body p {
+      font-size: xx-small; }
+    body h4 {
+      color: #07457E; }
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto); }
-  header {
-    width: 100%; }
-  body {
-    width: 100%; }
-  .noticias {
-    width: 90px;
-    height: 45px; }
-  img {
-    width: 150px;
-    height: auto; }
-  .oldschool {
-    width: 200px;
-    height: 100px; }
-  .worldrugby {
-    width: 200px;
-    height: 100px; }
-  .juegos-olimpicos {
-    width: 200px;
-    height: 100px; }
-  .jugadores {
-    grid-template-columns: repeat(2, 1fr);
-    font-size: x-small; }
-  .entrenadores p {
-    font-size: xx-small; }
-  .individual {
-    font-size: xx-small; }
-  a {
-    font-size: smaller; }
-  h2 {
-    font-size: small; }
-  h3 {
-    font-size: xx-small; }
-  p {
-    font-size: xx-small; } }
+    .grid-container p {
+      font-size: x-small; }
+    .grid-container .oldschool {
+      width: 200px;
+      height: 100px; }
+    .grid-container .worldrugby {
+      width: 200px;
+      height: 100px; }
+    .grid-container .juegos-olimpicos {
+      width: 200px;
+      height: 100px; } }
 
 h4 {
   color: #07457E; }
