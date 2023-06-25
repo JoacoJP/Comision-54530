@@ -129,6 +129,8 @@ footer{
     grid-template-rows: auto;
     text-align: center;
 
+    $color-primario: #073560;
+
     img{
         background-color: $color-primario;
     }
@@ -148,40 +150,222 @@ footer{
 
 }
 
+h4{
+    color: #07457E;
+}
+
 @mixin text-align{
     text-align: center;
 }
 
-$color-primario: #07457E;
-
-/**siempre al final del codigo css y ordenado**/
+@media (max-width: 1024px){
+    body{    
+        background-color: white;
+        color: black;
+        font-family: sans-serif;
+    
+        .importante{
+            object-fit: cover;
+            background-color: #D9D9D9;
+        }
+        
+        .foto{
+            width: 100%;
+            height: 75%;
+            height: fit-content;
+        }
+        
+        h2{
+            text-align: center;
+        }
+        
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            background-color: #D9D9D9;
+        }
+        
+        .noticias{
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+    
+    footer{
+        background-color: #073560;
+        color: white;
+        display: block;
+        width: 100%;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-rows: repeat(3,1) ;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        background-color: #D9D9D9;
+    
+        .grid-item1, .grid-item2, .grid-item3{
+            text-align: center;
+        }
+        
+        .grid-item2{
+            background-color: white;
+        }
+        
+        p{
+            font-family: sans-serif;
+            font-size: large;
+        }
+        
+        .oldschool{
+            width: 500px;
+            height: 250px;
+        }
+        
+        .worldrugby{
+            width: 500px;
+            height: 250px;
+        }
+        
+        .juegos-olimpicos{
+            width: 500px;
+            height: 250px;
+        }
+    }
+    
+    .jugadores{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+    
+        $color-primario: #073560;
+    
+        img{
+            background-color: $color-primario;
+        }
+    
+        p{
+            text-align: center;
+        }
+    }
+    
+    .entrenadores{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+        p{
+            text-align: center;
+        }
+    
+    }
+}
 
 @media (max-width: 768px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .container1{
-    grid-template-columns: repeat(3, 1fr);
-}
-
+    body{    
+        background-color: white;
+        color: black;
+        font-family: sans-serif;
+    
+        .importante{
+            object-fit: cover;
+            background-color: #D9D9D9;
+        }
+        
+        .foto{
+            width: 100%;
+            height: 75%;
+            height: fit-content;
+        }
+        
+        h2{
+            text-align: center;
+        }
+        
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            background-color: #D9D9D9;
+        }
+        
+        .noticias{
+            width: 220px;
+            height: 110px;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+    
+    footer{
+        background-color: #073560;
+        color: white;
+        display: block;
+        width: 100%;
+    }
+    
     .grid-container{
+        display: grid;
+        grid-template-rows: repeat(3,1) ;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        background-color: #D9D9D9;
+    
+        .grid-item1, .grid-item2, .grid-item3{
+            text-align: center;
+        }
+        
+        .grid-item2{
+            background-color: white;
+        }
+        
+        p{
+            font-family: sans-serif;
+            font-size: large;
+        }
+        
+        .oldschool{
+            width: 500px;
+            height: 250px;
+        }
+        
+        .worldrugby{
+            width: 500px;
+            height: 250px;
+        }
+        
+        .juegos-olimpicos{
+            width: 500px;
+            height: 250px;
+        }
     }
 
-    .noticias{
-        width: 225px;
-        height: 110px;
-    }
+.jugadores{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
 
-    img{
-    width: 50%;
-    height: auto;
+        img{
+            height: 150px;
+            width: auto;
+        }
+
+            p{
+                text-align: center;
+            }
 }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 426px){
     header{
         width: 100%;
         overflow-x: hidden;
@@ -192,6 +376,7 @@ $color-primario: #07457E;
     }
 
     body{
+
         width: 100%;
 
         .container1{
@@ -199,21 +384,13 @@ $color-primario: #07457E;
             gap: 1px;
         }
         
-        
             .noticias{
-                width: 90px;
-                height: 45px;
-            }
-
-
-            .noticias{
-                width: 90px;
-                height: 45px;
+                width: 110px;
+                height: 55px;
             }
         
-            img{
-            width: 150px;
-            height: auto;
+        p{
+            font-size: x-small;
         }
         
         .jugadores{
@@ -277,8 +454,87 @@ $color-primario: #07457E;
     }
 }
 
-h4{
-    color: #07457E;
+@media (max-width: 320px) {
+    header{
+        width: 100%;
+        overflow-x: hidden;
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    body{
+
+        width: 100%;
+
+        .container1{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+        }
+        
+            .noticias{
+                width: 90px;
+                height: 45px;
+            }
+        
+        .jugadores{
+            grid-template-columns: repeat(2, 1fr);
+            font-size: x-small;
+        }
+        
+        .entrenadores{
+            p{
+                font-size: xx-small;
+            }
+        }
+        
+        .individual{
+            font-size: xx-small;
+        }
+        
+        a{
+            font-size: smaller;
+        }
+        
+        h2{
+            font-size: small;
+        }
+        
+        h3{
+            font-size: xx-small;
+        }
+        
+        p{
+            font-size: xx-small;
+        }
+        
+        h4{
+            color: #07457E;
+        }
+            }
+
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+
+        p{
+            font-size: x-small;
+        }
+
+        .oldschool{
+            width: 200px;
+            height: 100px;
+                }
+                
+        .worldrugby{
+            width: 200px;
+            height: 100px;
+                }
+                
+        .juegos-olimpicos{
+            width: 200px;
+            height: 100px;   
+                }
+    }
 }
-
-
