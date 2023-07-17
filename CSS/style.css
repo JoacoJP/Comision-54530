@@ -52,7 +52,7 @@ body {
   body .container1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     background-color: #D9D9D9; }
   body .noticias {
     width: 400px;
@@ -104,6 +104,17 @@ footer {
   grid-template-columns: repeat(2, 1fr); }
   .entrenadores p {
     text-align: center; }
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  background-color: #D9D9D9; }
+  .container2 .noticias3 {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 5px; }
 
 h4 {
   color: #07457E; }
@@ -172,7 +183,15 @@ h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
     .entrenadores p {
-      text-align: center; } }
+      text-align: center; }
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .container2 .noticias3 {
+      width: 300px;
+      height: 150px;
+      text-align: center;
+      padding: 5px; } }
 
 @media (max-width: 768px) {
   .container {
@@ -236,7 +255,13 @@ h4 {
       height: 150px;
       width: auto; }
     .jugadores p {
-      text-align: center; } }
+      text-align: center; }
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .container2 .noticias3 {
+      width: 220px;
+      height: 110px; } }
 
 @media (max-width: 426px) {
   header {
@@ -284,7 +309,16 @@ h4 {
       height: 100px; }
     .grid-container .juegos-olimpicos {
       width: 200px;
-      height: 100px; } }
+      height: 100px; }
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 10px;
+    text-align: center; }
+    .container2 .noticias3 {
+      height: auto;
+      width: 300px; } }
 
 @media (max-width: 320px) {
   header {
@@ -292,6 +326,8 @@ h4 {
     overflow-x: hidden; }
     header .container {
       grid-template-columns: repeat(2, 1fr); }
+  h3 {
+    font-size: large; }
   body {
     width: 100%; }
     body .container1 {
@@ -321,7 +357,7 @@ h4 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto); }
     .grid-container p {
-      font-size: x-small; }
+      font-size: xx-small; }
     .grid-container .oldschool {
       width: 200px;
       height: 100px; }
@@ -330,4 +366,13 @@ h4 {
       height: 100px; }
     .grid-container .juegos-olimpicos {
       width: 200px;
-      height: 100px; } }
+      height: 100px; }
+  .container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 10px;
+    text-align: center; }
+    .container2 .noticias3 {
+      height: 150px;
+      width: 300px; } }
